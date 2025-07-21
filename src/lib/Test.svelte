@@ -34,9 +34,9 @@
   </div>
 
   <div class="space-y-4">
-    <div 
+    <button 
       onclick={() => {}}
-      class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group"
+      class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group w-full text-left"
       style="background-color: var(--bg-secondary); border-color: var(--border-color);"
     >
       <div class="flex items-center justify-between">
@@ -54,11 +54,11 @@
         </div>
         <ChevronRight style="color: var(--color-inactive);" size={20} />
       </div>
-    </div>
+    </button>
 
-    <div 
+    <button 
       onclick={() => {}}
-      class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group"
+      class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group w-full text-left"
       style="background-color: var(--bg-secondary); border-color: var(--border-color);"
     >
       <div class="flex items-center justify-between">
@@ -76,11 +76,11 @@
         </div>
         <ChevronRight style="color: var(--color-inactive);" size={20} />
       </div>
-    </div>
+    </button>
 
-    <div 
+    <button 
       onclick={() => {}}
-      class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group"
+      class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group w-full text-left"
       style="background-color: var(--bg-secondary); border-color: var(--border-color);"
     >
       <div class="flex items-center justify-between">
@@ -98,7 +98,7 @@
         </div>
         <ChevronRight style="color: var(--color-inactive);" size={20} />
       </div>
-    </div>
+    </button>
   </div>
 
   <div class="rounded-xl p-4" style="background-color: var(--bg-accent);">

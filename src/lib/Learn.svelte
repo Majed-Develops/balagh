@@ -26,9 +26,9 @@
   <div class="space-y-4">
     <h2 class="text-xl font-bold" style="color: var(--text-primary);">Islamic Knowledge</h2>
     {#each learningSections as section}
-      <div 
+      <button 
         onclick={() => {}}
-        class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group"
+        class="rounded-xl shadow-md p-4 border hover:shadow-lg transition-all cursor-pointer group w-full text-left"
         style="background-color: var(--bg-secondary); border-color: var(--border-color);"
       >
         <div class="flex items-center justify-between">
@@ -37,7 +37,7 @@
               class="p-3 rounded-lg group-hover:opacity-80 transition-colors"
               style="background-color: var(--bg-accent);"
             >
-              <svelte:component this={section.icon} style="color: var(--color-active);" size={24} />
+              {@render section.icon({style: "color: var(--color-active);", size: 24})}
             </div>
             <div class="flex-1">
               <h3 class="font-semibold" style="color: var(--text-primary);">{section.title}</h3>
@@ -60,7 +60,7 @@
             <ChevronRight style="color: var(--color-inactive);" size={20} />
           </div>
         </div>
-      </div>
+      </button>
     {/each}
   </div>
 
@@ -69,13 +69,13 @@
     <h2 class="text-lg font-bold" style="color: var(--text-primary);">Debate & Apologetics</h2>
     <div class="grid grid-cols-2 gap-3">
       {#each apologeticsTools as tool}
-        <div 
-          class="p-3 rounded-lg border cursor-pointer hover:opacity-80"
+        <button 
+          class="p-3 rounded-lg border cursor-pointer hover:opacity-80 w-full text-left"
           style="background-color: var(--bg-secondary); border-color: var(--border-color);"
           onclick={() => {}}
         >
           <div class="flex items-center space-x-2 mb-2">
-            <svelte:component this={tool.icon} style="color: var(--color-active);" size={20} />
+            {@render tool.icon({style: "color: var(--color-active);", size: 20})}
             <div class="text-xs font-bold" style="color: var(--text-primary);">
               {tool.title}
             </div>
@@ -83,7 +83,7 @@
           <div class="text-xs" style="color: var(--text-muted);">
             {tool.subtitle}
           </div>
-        </div>
+        </button>
       {/each}
     </div>
   </div>

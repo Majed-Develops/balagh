@@ -71,8 +71,8 @@
   </div>
 
   <!-- Quick Tableegh -->
-  <div 
-    class="rounded-xl shadow-md p-4 border cursor-pointer hover:shadow-lg transition-all"
+  <button 
+    class="rounded-xl shadow-md p-4 border cursor-pointer hover:shadow-lg transition-all w-full text-left"
     style="background-color: var(--bg-secondary); border-color: var(--border-color);"
     onclick={() => {}}
   >
@@ -90,7 +90,7 @@
     <div class="flex items-center justify-end mt-3">
       <ChevronRight style="color: var(--color-inactive);" size={20} />
     </div>
-  </div>
+  </button>
 
   <!-- Quick References -->
   <div class="space-y-4">

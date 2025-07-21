@@ -39,8 +39,9 @@
     <h3 class="font-semibold mb-4" style="color: var(--text-primary);">App Settings</h3>
     <div class="space-y-4">
       <div>
-        <label class="block text-sm font-medium mb-2" style="color: var(--text-primary);">Display Language</label>
+        <label for="language-select" class="block text-sm font-medium mb-2" style="color: var(--text-primary);">Display Language</label>
         <select 
+          id="language-select"
           bind:value={selectedLanguage}
           class="w-full p-3 border rounded-lg focus:ring-2 focus:outline-none"
           style="background-color: var(--bg-secondary); border-color: var(--border-color); color: var(--text-primary);"
