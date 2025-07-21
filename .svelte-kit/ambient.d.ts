@@ -51,6 +51,7 @@ declare module '$env/static/private' {
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_execpath: string;
 	export const PATH: string;
+	export const npm_config_ignored_built_dependencies: string;
 	export const npm_package_json: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
@@ -143,6 +144,7 @@ declare module '$env/dynamic/private' {
 		__CF_USER_TEXT_ENCODING: string;
 		npm_execpath: string;
 		PATH: string;
+		npm_config_ignored_built_dependencies: string;
 		npm_package_json: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
